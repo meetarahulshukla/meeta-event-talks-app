@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse the latest Google BigQuery release notes in a beautiful, dark-themed dashboard. Refresh on demand and share updates on X / Twitter." />
+  <title>BigQuery Release Notes</title>
+
+  <!-- Google Fonts – Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="app-container">
+
+    <!-- Header -->
+    <header class="app-header">
+      <div class="logo-row">
+        <div class="logo-icon" aria-hidden="true">⚡</div>
+        <h1 class="app-title">BigQuery Release Notes</h1>
+      </div>
+      <p class="app-subtitle">
+        Stay up to date with the latest features, announcements, and changes from Google BigQuery.
+      </p>
+    </header>
+
+    <!-- Toolbar -->
+    <div class="toolbar">
+      <p class="note-count">
+        Showing <span id="note-count">—</span> updates
+      </p>
+      <button class="btn-refresh" id="btn-refresh">
+        <span class="icon">↻</span> Refresh
+      </button>
+    </div>
+
+    <!-- Feed -->
+    <main class="feed-list" id="feed-list">
+      <!-- Populated by JS -->
+    </main>
+
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
